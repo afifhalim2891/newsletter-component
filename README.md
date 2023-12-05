@@ -2,6 +2,6 @@
 
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
 
-#Notable Code For References
+##Notable Code For References
 - Email validation
 - Mobile & Desktop Responsiveness
