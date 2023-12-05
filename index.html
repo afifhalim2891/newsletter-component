@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription</title>
+
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js" defer ></script>
+</head>
+<body>
+    <!-- Global Container -->
+    <div class="min-h-screen bg-darkSlateGrey flex justify-center items-center p-10">
+        <!-- Content Container -->
+        <div id="content-container" class="bg-white max-w-4xl mx-auto flex flex-col-reverse md:flex-row md:items-center md:justify-between md:space-x-10 md:rounded-3xl shadow-xl md:p-6 ">
+            <!-- Newsletter Submission Container -->
+            <div class="p-8 md:p-4 md:w-1/2">
+                <!-- Text -->
+                <div>
+                    <h2 class="text-3xl md:text-5xl text-darkSlateGrey font-extrabold capitalize mb-4">stay updated!</h2>
+
+                    <p class="text-sm max-w-xs text-darkSlateGrey">Join 60,000+ products manager receive monthly updates on:</p>
+
+                    <ul class="mt-4 max-w-xs flex flex-col space-y-3 text-darkSlateGrey">
+                        <li class="flex items-start space-x-3">
+                            <img src="./assets//images/icon-list.svg" alt="list icon" class="w-5 h-5">
+                            <span class="text-sm">Product discovery and building what matters</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <img src="./assets//images/icon-list.svg" alt="list icon" class="w-5 h-5">
+                            <span class="text-sm">Measuring to ensure update are success</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <img src="./assets//images/icon-list.svg" alt="list icon" class="w-5 h-5">
+                            <span class="text-sm">And much more</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <!-- Form -->
+                <div class="mt-6">
+                    <form id="form-email">
+                        <!-- Label Text & Error Text -->
+                        <div class="flex items-center justify justify-between mb-2">
+
+                            <label for="email" class="text-xs font-semibold text-darkSlateGrey">Email address</label>
+                            <span id="error-msg" class="text-xs font-base text-tomato"></span>
+                        </div>
+
+                        <!-- Email Address Input -->
+                        <input id="input-email" type="text" name="email" placeholder="email@company.com" class="block border border-gray-400 w-full px-4 py-3 rounded-md outline-none mb-3 text-xs placeholder:text-xs hover:cursor-pointer">
+
+                        <!-- Submit Email Button -->
+                        <button id="submit-email" type="submit" class="text-sm text-white rounded-md w-full py-3 capitalize font-base">subscribe to montly newsletter</button>
+                    </form>
+                </div>
+                
+            </div>
+            <!-- Image Container -->
+            <div class="md:w-1/2">
+                <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop images" class="hidden md:block">
+                <img src="./assets/images/illustration-sign-up-mobile.svg" alt="desktop images" class="block md:hidden w-full">
+            </div>
+        </div>
+
+        <!-- Submission Success Container -->
+        <div id="success-message" class="max-w-sm bg-white rounded-2xl p-10 shadow-lg hidden">
+            <img src="./assets/images/icon-success.svg" alt="success icon" class="w-12 h-12 mb-4">
+            <h3 class="text-4xl font-bold text-darkSlateGrey mb-4">Thanks for subscribing!</h3>
+            <p class="text-sm text-darkSlateGrey max-w-[90%] mb-4">
+                A confirmation email has been sent to <strong>afifhalim2891@gmail.com</strong>. Please open it and click the button inside to confirm your subscription
+            </p>
+
+            <button id="dismiss-btn" class="w-full py-3 bg-darkSlateGrey rounded-md text-sm text-white">Dismiss message</button>
+        </div>
+
+    </div>
+</body>
+</html>

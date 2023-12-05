@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#submit-email {
+    background-image: linear-gradient(to right, hsl(234 29% 20%), hsl(234 29% 20%)); /* Initial background image */
+    transition: background 2s ease; /* Add the transition property to the background */
+}
+
+#submit-email:hover {
+    background-image: linear-gradient(to right, #ff673e, #ff5771);
+}
+
